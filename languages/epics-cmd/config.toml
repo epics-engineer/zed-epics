@@ -1,0 +1,9 @@
+name = "EPICS Command"
+grammar = "epics_cmd"
+path_suffixes = ["cmd"]
+line_comments = ["# "]
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["comment", "string"] },
+]

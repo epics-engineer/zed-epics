@@ -1,0 +1,9 @@
+name = "EPICS MSI Template"
+grammar = "epics_msi_template"
+# This grammar is primarily used through injections for EPICS macro expansions.
+path_suffixes = []
+brackets = [
+  { start = "${", end = "}", close = true, newline = false, not_in = ["comment", "string"] },
+  { start = "$(", end = ")", close = true, newline = false, not_in = ["comment", "string"] },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+]

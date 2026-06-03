@@ -1,0 +1,14 @@
+name = "StreamDevice Protocol"
+grammar = "streamdevice_proto"
+# Do not claim all .proto files by default because Protocol Buffers use the
+# same suffix. Select this language manually, or add a Zed file-type override
+# for .proto files in projects where they are StreamDevice protocol files.
+path_suffixes = []
+line_comments = ["# "]
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["comment", "string"] },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["comment", "string"] },
+]

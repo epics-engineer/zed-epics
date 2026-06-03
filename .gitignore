@@ -1,0 +1,6 @@
+.DS_Store
+
+# Zed dev extension build output
+/grammars/
+/extension.wasm
+/target/

@@ -1,0 +1,42 @@
+id = "epics"
+name = "EPICS"
+version = "0.1.0"
+schema_version = 1
+authors = ["Marcin Lukaszewski <marcin@epics.engineer>"]
+description = "EPICS and StreamDevice language support for Zed"
+repository = "https://github.com/epics-engineer/zed-epics"
+themes = []
+icon_themes = []
+languages = [
+  "languages/epics-cmd",
+  "languages/epics-db",
+  "languages/epics-msi-substitution",
+  "languages/epics-msi-template",
+  "languages/snl",
+  "languages/streamdevice-proto",
+]
+capabilities = []
+
+[grammars.epics_cmd]
+repository = "https://github.com/minijackson/tree-sitter-epics-cmd"
+rev = "d360114da6a64f52a33cbb90f7d2d127b95c309e"
+
+[grammars.epics_db]
+repository = "https://github.com/minijackson/tree-sitter-epics-db"
+rev = "1c20fe89eae9831c59f93184d600d371e5d33691"
+
+[grammars.epics_msi_substitution]
+repository = "https://github.com/minijackson/tree-sitter-epics-msi-substitution"
+rev = "0a66d4f9ccf996233d98b63f533cacfccca97b12"
+
+[grammars.epics_msi_template]
+repository = "https://github.com/minijackson/tree-sitter-epics-msi-template"
+rev = "c9885dbef3e99a22a8c8600200f5167cbfda4e88"
+
+[grammars.snl]
+repository = "https://github.com/minijackson/tree-sitter-snl"
+rev = "846e2d6809ac5863a15b5494f20fd267c21221c8"
+
+[grammars.streamdevice_proto]
+repository = "https://github.com/minijackson/tree-sitter-streamdevice-proto"
+rev = "b638715ae8deb91c8bfedd7ff1fb27650f6e0309"
